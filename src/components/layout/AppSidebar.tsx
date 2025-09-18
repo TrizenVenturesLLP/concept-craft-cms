@@ -5,9 +5,9 @@ import {
   LayoutDashboard, 
   Upload,
   Users,
-  Settings,
-  Star
+  Settings
 } from "lucide-react";
+import trizenLogo from "@/assets/trizen-logo.png";
 import { NavLink, useLocation } from "react-router-dom";
 import {
   Sidebar,
@@ -52,8 +52,8 @@ export function AppSidebar() {
     >
       <SidebarHeader className="border-b border-border">
         <div className="flex items-center gap-3 p-4">
-          <div className="w-8 h-8 bg-gradient-to-br from-primary to-primary-hover rounded-lg flex items-center justify-center">
-            <Star className="w-4 h-4 text-primary-foreground" />
+          <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center p-1">
+            <img src={trizenLogo} alt="Trizen Ventures" className="w-full h-full object-contain" />
           </div>
           {open && (
             <div>

@@ -3,7 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Star, Mail, Lock } from "lucide-react";
+import { Mail, Lock } from "lucide-react";
+import trizenLogo from "@/assets/trizen-logo.png";
 import { useNavigate } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
 
@@ -41,8 +42,8 @@ export default function Login() {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-muted/30 to-accent/20 p-4">
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary to-primary-hover rounded-xl mb-4 shadow-lg">
-            <Star className="w-8 h-8 text-primary-foreground" />
+          <div className="inline-flex items-center justify-center w-20 h-20 bg-white rounded-xl mb-4 shadow-lg p-2">
+            <img src={trizenLogo} alt="Trizen Ventures" className="w-full h-full object-contain" />
           </div>
           <h1 className="text-2xl font-bold text-foreground">Trizen Ventures</h1>
           <p className="text-muted-foreground">Problem Statement CMS Portal</p>
