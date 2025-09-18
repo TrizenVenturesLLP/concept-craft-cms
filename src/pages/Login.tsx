@@ -42,10 +42,9 @@ export default function Login() {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-muted/30 to-accent/20 p-4">
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
-          <div className="inline-flex items-center justify-center w-20 h-20 bg-white rounded-xl mb-4 shadow-lg p-2">
+          <div className="inline-flex items-center justify-center w-24 h-24 bg-white rounded-xl mb-4 shadow-lg p-3">
             <img src={trizenLogo} alt="Trizen Ventures" className="w-full h-full object-contain" />
           </div>
-          <h1 className="text-2xl font-bold text-foreground">Trizen Ventures</h1>
           <p className="text-muted-foreground">Problem Statement CMS Portal</p>
         </div>
 

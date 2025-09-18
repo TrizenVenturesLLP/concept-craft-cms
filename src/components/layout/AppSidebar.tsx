@@ -51,16 +51,10 @@ export function AppSidebar() {
       collapsible="icon"
     >
       <SidebarHeader className="border-b border-border">
-        <div className="flex items-center gap-3 p-4">
-          <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center p-1">
+        <div className="flex items-center justify-center p-4">
+          <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center p-2">
             <img src={trizenLogo} alt="Trizen Ventures" className="w-full h-full object-contain" />
           </div>
-          {open && (
-            <div>
-              <h2 className="font-bold text-foreground">Trizen Ventures</h2>
-              <p className="text-xs text-muted-foreground">Problem CMS</p>
-            </div>
-          )}
         </div>
       </SidebarHeader>
 
