@@ -2,125 +2,121 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Trizen Ventures CMS Design System - Matching Main Website Theme */
+/* Trizen Ventures CMS Design System - All colors MUST be HSL */
 
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 210 25% 15%;
+    --foreground: 215 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 210 25% 15%;
+    --card-foreground: 215 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 25% 15%;
+    --popover-foreground: 215 25% 15%;
 
-    /* Trizen Brand Colors - Matching Website */
-    --primary: 210 100% 35%;
+    /* Trizen Brand Colors */
+    --primary: 210 100% 50%;
     --primary-foreground: 0 0% 100%;
-    --primary-hover: 210 100% 30%;
+    --primary-hover: 210 100% 45%;
 
-    /* Teal/Cyan Accent - Matching Website */
-    --accent: 180 100% 40%;
-    --accent-foreground: 0 0% 100%;
-    --accent-hover: 180 100% 35%;
+    --secondary: 220 15% 96%;
+    --secondary-foreground: 215 25% 25%;
 
-    --secondary: 210 20% 94%;
-    --secondary-foreground: 210 25% 25%;
+    --muted: 220 13% 95%;
+    --muted-foreground: 215 15% 60%;
 
-    --muted: 210 15% 96%;
-    --muted-foreground: 210 15% 60%;
+    --accent: 195 100% 95%;
+    --accent-foreground: 195 100% 25%;
 
-    /* Status Colors - Trizen Theme */
-    --status-draft: 210 15% 70%;
-    --status-active: 180 100% 40%;
+    /* Status Colors */
+    --status-draft: 220 15% 70%;
+    --status-active: 142 76% 36%;
     --status-archived: 0 84% 60%;
 
-    /* Difficulty Colors - Trizen Theme */
-    --difficulty-beginner: 180 100% 40%;
-    --difficulty-intermediate: 35 91% 50%;
-    --difficulty-advanced: 210 100% 35%;
+    /* Difficulty Colors */
+    --difficulty-beginner: 210 100% 50%;
+    --difficulty-intermediate: 35 91% 60%;
+    --difficulty-advanced: 260 60% 50%;
 
-    /* Category Colors - Trizen Theme */
-    --category-major: 210 100% 35%;
-    --category-minor: 35 91% 50%;
-    --category-capstone: 180 100% 40%;
+    /* Category Colors */
+    --category-major: 210 100% 50%;
+    --category-minor: 45 93% 47%;
+    --category-capstone: 180 100% 35%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 15% 90%;
-    --input: 210 15% 94%;
-    --ring: 180 100% 40%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 210 100% 50%;
 
     --radius: 0.75rem;
 
-    /* Shadows and Effects - Enhanced */
-    --shadow-sm: 0 1px 2px 0 hsl(210 25% 15% / 0.08);
-    --shadow-md: 0 4px 6px -1px hsl(210 25% 15% / 0.12), 0 2px 4px -2px hsl(210 25% 15% / 0.08);
-    --shadow-lg: 0 10px 15px -3px hsl(210 25% 15% / 0.12), 0 4px 6px -4px hsl(210 25% 15% / 0.08);
+    /* Shadows and Effects */
+    --shadow-sm: 0 1px 2px 0 hsl(215 25% 15% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(215 25% 15% / 0.1), 0 2px 4px -2px hsl(215 25% 15% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(215 25% 15% / 0.1), 0 4px 6px -4px hsl(215 25% 15% / 0.1);
 
-    /* Gradients - Trizen Theme */
-    --gradient-primary: linear-gradient(135deg, hsl(210 100% 35%), hsl(180 100% 40%));
-    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%), hsl(210 15% 98%));
-    --gradient-hero: linear-gradient(135deg, hsl(210 100% 35%), hsl(210 50% 20%));
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210 100% 50%), hsl(195 100% 45%));
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%), hsl(220 15% 98%));
 
-    /* Sidebar tokens - Trizen Theme */
+    /* Sidebar tokens */
     --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 210 25% 15%;
-    --sidebar-primary: 210 100% 35%;
+    --sidebar-foreground: 215 25% 15%;
+    --sidebar-primary: 210 100% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 210 15% 96%;
-    --sidebar-accent-foreground: 210 25% 25%;
-    --sidebar-border: 210 15% 90%;
-    --sidebar-ring: 180 100% 40%;
+    --sidebar-accent: 220 15% 96%;
+    --sidebar-accent-foreground: 215 25% 25%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 210 100% 50%;
   }
 
   .dark {
-    --background: 210 50% 8%;
+    --background: 215 28% 8%;
     --foreground: 210 20% 95%;
 
-    --card: 210 50% 10%;
+    --card: 215 28% 10%;
     --card-foreground: 210 20% 95%;
 
-    --popover: 210 50% 10%;
+    --popover: 215 28% 10%;
     --popover-foreground: 210 20% 95%;
 
-    --primary: 180 100% 50%;
-    --primary-foreground: 210 50% 8%;
-    --primary-hover: 180 100% 45%;
+    --primary: 210 100% 60%;
+    --primary-foreground: 215 28% 8%;
+    --primary-hover: 210 100% 55%;
 
-    --accent: 180 100% 50%;
-    --accent-foreground: 210 50% 8%;
-    --accent-hover: 180 100% 45%;
-
-    --secondary: 210 50% 15%;
+    --secondary: 215 28% 15%;
     --secondary-foreground: 210 20% 95%;
 
-    --muted: 210 50% 12%;
-    --muted-foreground: 210 15% 65%;
+    --muted: 215 28% 12%;
+    --muted-foreground: 215 15% 65%;
+
+    --accent: 215 28% 15%;
+    --accent-foreground: 210 20% 95%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 20% 95%;
 
-    --border: 210 50% 18%;
-    --input: 210 50% 18%;
-    --ring: 180 100% 50%;
+    --border: 215 28% 18%;
+    --input: 215 28% 18%;
+    --ring: 210 100% 60%;
 
-    /* Status Colors - Dark Trizen Theme */
-    --status-draft: 210 15% 60%;
-    --status-active: 180 100% 50%;
+    /* Status Colors - Dark */
+    --status-draft: 220 15% 60%;
+    --status-active: 142 69% 58%;
     --status-archived: 0 84% 60%;
 
-    /* Sidebar tokens - Dark Trizen Theme */
-    --sidebar-background: 210 50% 8%;
+    /* Sidebar tokens - Dark */
+    --sidebar-background: 215 28% 8%;
     --sidebar-foreground: 210 20% 95%;
-    --sidebar-primary: 180 100% 50%;
-    --sidebar-primary-foreground: 210 50% 8%;
-    --sidebar-accent: 210 50% 15%;
+    --sidebar-primary: 210 100% 60%;
+    --sidebar-primary-foreground: 215 28% 8%;
+    --sidebar-accent: 215 28% 15%;
     --sidebar-accent-foreground: 210 20% 95%;
-    --sidebar-border: 210 50% 18%;
-    --sidebar-ring: 180 100% 50%;
+    --sidebar-border: 215 28% 18%;
+    --sidebar-ring: 210 100% 60%;
   }
 }
 
