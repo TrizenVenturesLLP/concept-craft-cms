@@ -26,18 +26,13 @@ COPY nginx.conf /etc/nginx/nginx.conf
 # Copy built application from builder stage
 COPY --from=builder /app/dist /usr/share/nginx/html
 
-# Set proper permissions for existing nginx user
+# Set proper permissions for nginx
 RUN chown -R nginx:nginx /usr/share/nginx/html && \
     chown -R nginx:nginx /var/cache/nginx && \
     chown -R nginx:nginx /var/log/nginx && \
-    chown -R nginx:nginx /etc/nginx/conf.d
-
-# Create nginx pid directory
-RUN mkdir -p /var/run/nginx && \
+    chown -R nginx:nginx /etc/nginx/conf.d && \
+    mkdir -p /var/run/nginx && \
     chown -R nginx:nginx /var/run/nginx
-
-# Switch to non-root user
-USER nginx
 
 # Expose port 80
 EXPOSE 80
