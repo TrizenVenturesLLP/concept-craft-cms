@@ -1,19 +1,17 @@
-# Build stage
-FROM node:18-alpine AS builder
+# Base stage
+FROM node:18-alpine AS base
 
-# Set working directory
+# Install dependencies stage
+FROM base AS deps
 WORKDIR /app
-
-# Copy package files
 COPY package.json package-lock.json* ./
+RUN npm ci && npm cache clean --force
 
-# Install dependencies
-RUN npm ci --only=production
-
-# Copy source code
+# Build stage
+FROM base AS builder
+WORKDIR /app
+COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-
-# Build the application
 RUN npm run build
 
 # Production stage with Nginx
