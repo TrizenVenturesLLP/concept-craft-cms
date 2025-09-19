@@ -43,7 +43,7 @@ export function AppSidebar() {
   const getNavCls = ({ isActive }: { isActive: boolean }) =>
     isActive 
       ? "bg-primary text-primary-foreground font-medium shadow-sm" 
-      : "hover:bg-accent hover:text-accent-foreground transition-colors";
+      : "text-sidebar-foreground hover:bg-accent hover:text-accent-foreground transition-colors";
 
   return (
     <Sidebar
@@ -52,7 +52,7 @@ export function AppSidebar() {
     >
       <SidebarHeader className="border-b border-border">
         <div className="flex items-center justify-center p-4">
-          <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center p-2">
+          <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center p-3">
             <img src={trizenLogo} alt="Trizen Ventures" className="w-full h-full object-contain" />
           </div>
         </div>
