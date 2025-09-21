@@ -1,27 +1,23 @@
 # Dependencies
-node_modules/
-/.pnp
-.pnp.js
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Testing
-/coverage
+# Production build
+dist
+build
 
-# Production
-/build
-/dist
-
-# Misc
-.DS_Store
+# Environment files
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
 # Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-lerna-debug.log*
+logs
+*.log
 
 # Runtime data
 pids
@@ -30,18 +26,14 @@ pids
 *.pid.lock
 
 # Coverage directory used by tools like istanbul
-coverage/
+coverage
 *.lcov
 
 # nyc test coverage
 .nyc_output
 
 # Dependency directories
-node_modules/
 jspm_packages/
-
-# TypeScript cache
-*.tsbuildinfo
 
 # Optional npm cache directory
 .npm
@@ -64,16 +56,7 @@ jspm_packages/
 # Yarn Integrity file
 .yarn-integrity
 
-# dotenv environment variables file
-.env
-.env.test
-.env.production
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# parcel-bundler cache
+# parcel-bundler cache (https://parceljs.org/)
 .cache
 .parcel-cache
 
@@ -82,11 +65,9 @@ jspm_packages/
 
 # Nuxt.js build / generate output
 .nuxt
-dist
 
 # Gatsby files
 .cache/
-public
 
 # Storybook build outputs
 .out
@@ -95,10 +76,6 @@ public
 # Temporary folders
 tmp/
 temp/
-
-# Logs
-logs
-*.log
 
 # Editor directories and files
 .vscode/
@@ -116,6 +93,20 @@ logs
 ehthumbs.db
 Thumbs.db
 
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile
+.dockerignore
+docker-compose*.yml
+
+# Documentation
+README.md
+*.md
+docs/
+
 # Test files
 test/
 tests/
@@ -123,32 +114,6 @@ __tests__/
 *.test.js
 *.spec.js
 
-# Documentation
-docs/
-*.md
-README.md
-
-# Docker
-# Keep Dockerfiles for deployment
-# Dockerfile
-!.dockerignore
-!docker-compose*.yml
-
-# Deployment
-# Keep captain-definition for CapRover deployment
-# captain-definition
+# Development files
 .captain-definition
-
-# Vite
-dist-ssr
-*.local
-
-# Editor
-.vscode/*
-!.vscode/extensions.json
-.idea
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+captain-definition
