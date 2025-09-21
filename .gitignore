@@ -86,7 +86,9 @@ dist
 
 # Gatsby files
 .cache/
-public
+# Only ignore public build outputs, not source files
+public/build/
+public/dist/
 
 # Storybook build outputs
 .out

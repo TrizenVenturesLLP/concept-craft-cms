@@ -98,9 +98,10 @@ Thumbs.db
 .gitignore
 
 # Docker
-Dockerfile
-.dockerignore
-docker-compose*.yml
+# Keep Dockerfile and docker-compose for deployment
+# Dockerfile
+# .dockerignore
+# docker-compose*.yml
 
 # Documentation
 README.md
