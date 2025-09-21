@@ -37,9 +37,6 @@ RUN chown -R nginx:nginx /usr/share/nginx/html && \
 # Expose port 8080
 EXPOSE 8080
 
-# Update nginx config to listen on port 8080
-RUN sed -i 's/listen 80;/listen 8080;/' /etc/nginx/nginx.conf
-
 # Health check
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
   CMD wget --no-verbose --tries=1 --spider http://localhost:8080/ || exit 1
